@@ -11,6 +11,6 @@ __Download Artifact: uses: actions/download-artifact@v3__
 Allows us to read artifact data across different jobs. We would need to specify the `- name:` from which the artifact was upload. 
 ![2023-03-27 14 14 28](https://user-images.githubusercontent.com/39248529/228030916-9efc5712-47c0-4421-8a4b-b91fea50b5e2.gif)
 
-** Publish Artifact **
-We defined a step witin the build job where given and `id` we would "publish" the artifact and expose it to the github context. This is done when we point the `outputs:` section to its location in the context. We would then access that context in a different job. This gif will show that we publish the artifact in the build step and was able to use it to echo the file name in the deploy job.  
+**Publish Artifact**
+We defined a step witin the build job where given and `id` we would "publish" the artifact and expose it to the github context. This is done when we point the `outputs:` section to its value with in the step. It give us access to that data in a different. Below will show that we publish the artifact in the build step and was able to use it to echo the file name in the deploy job.  
 ![2023-03-27 14 54 31](https://user-images.githubusercontent.com/39248529/228040166-e8d055cb-b465-48c7-8091-94bf3a3d9a2c.gif)
