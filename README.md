@@ -20,3 +20,4 @@ We defined a step witin the build job where given and `id` we would "publish" th
 
 **Caching uses: actions/cache@v3**
 Improving workflow speed by caching steps that are execcuted more that once across different jobs. Demo.yml file will show that we have to manage caching in any job that has the same step. With the cache action we dont have to perform the same step if the cache exist already. Note that the step will still run it will jsut use the cached data instead if regenerating it. The only time this cache will be updated is if the dependency changes. 
+![2023-03-27 15 39 00](https://user-images.githubusercontent.com/39248529/228049053-5bb3da93-1fb8-404c-a6cc-6307d1472b26.gif)
